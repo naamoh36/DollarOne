@@ -68,7 +68,7 @@ npm run dev
 
 ## พรีวิวสำหรับลูกค้าบน GitHub Pages
 
-เตรียมไฟล์ `.github/workflows/pages.yml` สำหรับเผยแพร่เฉพาะโฟลเดอร์ `dist/` โดยทำงานเมื่อ push ไปยัง default branch หรือสั่งด้วยตนเองจาก Actions เส้นทางไฟล์ CSS/JavaScript/icon เป็น relative จึงรองรับ URL แบบ `<account>.github.io/DollarOne/` ได้
+เตรียมไฟล์ `.github/workflows/pages.yml` สำหรับเผยแพร่เฉพาะโฟลเดอร์ `dist/` โดยสั่งด้วยตนเองจาก Actions เมื่อ repository มีสิทธิ์ใช้งาน GitHub Pages เส้นทางไฟล์ CSS/JavaScript/icon เป็น relative จึงรองรับ URL แบบ `<account>.github.io/DollarOne/` ได้
 
 หลังเข้าถึง repository และอัปโหลดได้แล้ว ให้ตั้งค่า Settings → Pages → Build and deployment → Source เป็น GitHub Actions จากนั้นตรวจว่า workflow สำเร็จและเปิด URL ที่ deployment คืนมาได้จริง จึงใช้ลิงก์นั้นส่งให้ลูกค้า
 
@@ -78,4 +78,6 @@ GitHub Pages เป็นพรีวิวที่เข้าถึงทา�
 
 Repository: https://github.com/naamoh36/DollarOne
 
-ตรวจสถานะการเผยแพร่และ URL ที่ใช้งานได้จริงใน Actions หรือ Settings → Pages ของ repository ก่อนส่งลิงก์ให้ลูกค้า
+สถานะ: อัปโหลดต้นแบบเข้า repository แล้ว และคง repository เป็น Private ตามคำสั่งเจ้าของ GitHub Pages ยังไม่เปิดใช้งาน เพราะแพ็กเกจปัจจุบันไม่รองรับ Pages สำหรับ repository ส่วนตัว จึงตั้ง workflow เป็นการสั่งด้วยตนเองเพื่อไม่ให้เกิดการเผยแพร่ล้มเหลวซ้ำเมื่อแก้ไฟล์
+
+ยังไม่มีลิงก์พรีวิวออนไลน์ที่ยืนยันว่าเปิดใช้งานแล้ว การเปิดพรีวิวผ่านโฮสต์อื่นต้องยืนยันปลายทางและกลุ่มผู้ชมกับเจ้าของก่อน
