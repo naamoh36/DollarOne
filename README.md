@@ -2,9 +2,11 @@
 
 ต้นแบบเว็บไซต์ภาษาไทยสำหรับแบรนด์ DollarOne รวมบริการบัญชี/ภาษี และ DollarOne Academy ภายใต้ที่อยู่เว็บไซต์เดียวกัน โทนส้ม ถ่าน และขาวนวล ได้แรงบันดาลใจด้านโครงสร้างจาก borntodev.com และ school.borntodev.com โดยสร้างแบรนด์ ภาพประกอบ และเนื้อหาใหม่
 
-## สถานะพรีวิว
+## เว็บไซต์ตัวอย่างสำหรับลูกค้า
 
-ไฟล์ต้นแบบอัปโหลดไว้ที่ https://github.com/naamoh36/DollarOne แล้ว ปลายทางสำหรับเปิดดูเว็บไซต์ที่ต้องการคือ GitHub Pages ซึ่งยังไม่เปิดใช้งาน
+[เปิดเว็บไซต์ DollarOne](https://naamoh36.github.io/DollarOne/)
+
+เว็บไซต์เผยแพร่ผ่าน GitHub Pages ลูกค้าเปิดได้ทันทีโดยไม่ต้องมีบัญชี GitHub Repository นี้เป็น Public
 
 ## เปิดใช้งานในเครื่อง
 
@@ -70,18 +72,14 @@ npm run dev
 
 ยืนยันนิติบุคคล ผู้รับผิดชอบวิชาชีพ ชื่อและโดเมนแบรนด์ ขอบเขตและราคา ผู้สอน หลักสูตร เลขที่อนุมัติและสิทธิการนับชั่วโมง แยกข้อกำหนดผู้ทำบัญชี/CPA/TA ให้ถูกต้อง จากนั้นเพิ่มระบบสมาชิก จัดเก็บเอกสารอย่างเหมาะสม สมัครเรียน ชำระเงิน ตรวจตัวตน/การเข้าเรียน ประเมินผล หลักฐานอบรม ช่องทางติดต่อจริง และนโยบายที่ตรงกับระบบที่ใช้งาน
 
-## พรีวิวสำหรับลูกค้าบน GitHub Pages
+## การเผยแพร่บน GitHub Pages
 
-เตรียมไฟล์ `.github/workflows/pages.yml` สำหรับเผยแพร่เฉพาะโฟลเดอร์ `dist/` โดยสั่งด้วยตนเองจาก Actions เมื่อ repository มีสิทธิ์ใช้งาน GitHub Pages เส้นทางไฟล์ CSS/JavaScript/icon เป็น relative จึงรองรับ URL แบบ `<account>.github.io/DollarOne/` ได้
+ไฟล์เว็บไซต์อยู่ใน `dist/` และเผยแพร่ด้วย `.github/workflows/pages.yml` เมื่อ push การเปลี่ยนแปลงใน `dist/` หรือ workflow ไปยัง `main` สามารถสั่งด้วยตนเองจาก Actions ได้ด้วย
 
-หลังเข้าถึง repository และอัปโหลดได้แล้ว ให้ตั้งค่า Settings → Pages → Build and deployment → Source เป็น GitHub Actions จากนั้นตรวจว่า workflow สำเร็จและเปิด URL ที่ deployment คืนมาได้จริง จึงใช้ลิงก์นั้นส่งให้ลูกค้า
+ตั้งค่า Settings → Pages → Source เป็น GitHub Actions และตรวจผล workflow ก่อนส่งลิงก์ให้ลูกค้า เส้นทาง CSS, JavaScript และไอคอนใช้ relative paths เพื่อรองรับ `/DollarOne/`
 
-GitHub Pages เป็นพรีวิวที่เข้าถึงทางอินเทอร์เน็ตได้ จึงเผยแพร่เฉพาะไฟล์เว็บไซต์ตัวอย่าง ไม่มีเอกสารบัญชีจริง ข้อมูลลูกค้า หรือ credentials
+ลิงก์เว็บไซต์: https://naamoh36.github.io/DollarOne/
 
-อ้างอิง workflow ต้นทาง: https://github.com/actions/starter-workflows/blob/main/pages/static.yml
+ลิงก์ repository: https://github.com/naamoh36/DollarOne
 
-Repository: https://github.com/naamoh36/DollarOne
-
-สถานะ: อัปโหลดต้นแบบเข้า repository แล้ว และคง repository เป็น Private ตามคำสั่งเจ้าของ GitHub Pages ยังไม่เปิดใช้งาน เพราะแพ็กเกจปัจจุบันไม่รองรับ Pages สำหรับ repository ส่วนตัว จึงตั้ง workflow เป็นการสั่งด้วยตนเองเพื่อไม่ให้เกิดการเผยแพร่ล้มเหลวซ้ำเมื่อแก้ไฟล์
-
-ยังไม่มีลิงก์ GitHub Pages ที่พร้อมให้ลูกค้าเปิดดูได้ทันที
+ตรวจว่าเว็บไซต์และไฟล์ประกอบตอบ HTTP 200 โดยไม่ส่งคุกกี้หรือข้อมูลเข้าสู่ระบบแล้ว เมื่อวันที่ 28 ตุลาคม 2569
